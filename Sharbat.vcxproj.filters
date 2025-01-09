@@ -21,6 +21,9 @@
     <Filter Include="Architecture\source">
       <UniqueIdentifier>{7a72aadc-f7bb-4e41-9e0a-25c08b4775e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{25ca7594-4d76-4623-9464-d83e7370609f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -44,6 +47,15 @@
     <ClInclude Include="sceneManager.h">
       <Filter>Architecture\header</Filter>
     </ClInclude>
+    <ClInclude Include="widget.hpp">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="button.hpp">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="label.hpp">
+      <Filter>GUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -51,6 +63,12 @@
     </ClCompile>
     <ClCompile Include="Sharbat.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="button.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="label.cpp">
+      <Filter>GUI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

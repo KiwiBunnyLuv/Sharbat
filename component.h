@@ -31,4 +31,11 @@ namespace sharbat {
 			sprite.setTexture(texture);
 		}
 	};
+
+	class sizeComponent : public Component {
+	public:
+		float sx, sy;
+
+		sizeComponent(float sx = 0, float sy = 0) : sx(sx), sy(sy) {}
+	};
 }
