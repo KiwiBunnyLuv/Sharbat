@@ -4,7 +4,7 @@
 
   <a>
 
-    <img src="ressourcces\readme\logo.PNG" alt="Logo" width="150" height="150">
+  <img src="ressourcces\readme\logo.PNG" alt="Logo" width="150" height="150">
 
   </a>
 
@@ -16,20 +16,20 @@
   <p align="center">
     A open-source code-based 2D game-engine
 
-    <a href="https://github.com/KiwiBunnyLuv/Sharbat"><strong>Explore the docs »</strong></a>
+  <a href="https://github.com/KiwiBunnyLuv/Sharbat"><strong>Explore the docs »</strong></a>
 
-    &middot;
+  &middot;
 
 
-    <a href="https://github.com/KiwiBunnyLuv/Sharbat">View Demo</a>
+  <a href="https://github.com/KiwiBunnyLuv/Sharbat">View Demo</a>
 
-    &middot;
+  &middot;
 
-    <a href="https://github.com/KiwiBunnyLuv/Sharbat">Report Bug</a>
+  <a href="https://github.com/KiwiBunnyLuv/Sharbat">Report Bug</a>
 
-    &middot;
+  &middot;
 
-    <a href="https://github.com/KiwiBunnyLuv/Sharbat">Request Feature</a>
+  <a href="https://github.com/KiwiBunnyLuv/Sharbat">Request Feature</a>
 
   </p>
 
@@ -41,42 +41,40 @@
 
   <ol>
 
-    <li>
+  <li>
 
-      <a href="#about-the-project">About The Project</a>
+  <a href="#about-the-project">About The Project</a>
 
-      <ul>
+<ul>
 
-        <li><a href="#built-with">Built With</a></li>
+  <li><a href="#built-with">Built With</a></li>
 
-      </ul>
+</ul>
 
-    </li>
+</li>
 
-    <li>
+<li>
 
-      <a href="#getting-started">Getting Started</a>
+<a href="#getting-started">Getting Started</a>
 
-      <ul>
+<ul>
 
-        <li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
 
-        <li><a href="#installation">Installation</a></li>
+  <li><a href="#installation">Installation</a></li>
 
-      </ul>
+   </ul>
 
-    </li>
+ </li>
 
-    <li><a href="#usage">Usage</a></li>
+  <li><a href="#usage">Usage</a></li>
 
-    <li><a href="#roadmap">Roadmap</a></li>
+   <li><a href="#roadmap">Roadmap</a></li>
 
-    <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#contributing">Contributing</a></li>
 
-    <li><a href="#license">License</a></li>
-
+   <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-
     <li><a href="#acknowledgments">Acknowledgments</a></li>
 
   </ol>
@@ -102,6 +100,6 @@ This framework use the ECS (Entity-Component-System) architecture. The component
 
 Entities (but also widgets) can then be assigned to a specific scene of your game.
 
-    <img src="ressourcces\readme\architecture_entity_breakdown_schema.png" alt="scene">
+  <img src="ressourcces\readme\architecture_entity_breakdown_schema.png" alt="scene">
 
 still working on the readme lmao
