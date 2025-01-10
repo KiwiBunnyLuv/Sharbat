@@ -89,10 +89,11 @@ Sharbat is an open-source 2D game-engine/framework based on the SFML library. Sh
 
 This framework use the ECS (Entity-Component-System) architecture. The components are a certain type of data that is assigned to an entity. The entities represent any general purpose objects of your game and can get have components assigned to them.
 
- <img src="ressourcces\readme\architecture_scene_breakdown_schema.png" alt="entity">
+  <img src="ressourcces\readme\architecture_entity_breakdown_schema.png" alt="scene">
 
 Entities (but also widgets) can then be assigned to a specific scene of your game.
 
-  <img src="ressourcces\readme\architecture_entity_breakdown_schema.png" alt="scene">
+
+  <img src="ressourcces\readme\architecture_scene_breakdown_schema.png" alt="entity">
 
 still working on the readme lmao
