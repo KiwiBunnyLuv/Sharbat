@@ -14,23 +14,16 @@
 
 
   <p align="center">
-    A open-source code-based 2D game-engine
-
-  <a href="https://github.com/KiwiBunnyLuv/Sharbat"><strong>Explore the docs »</strong></a>
-
-  &middot;
-
-
-  <a href="https://github.com/KiwiBunnyLuv/Sharbat">View Demo</a>
-
-  &middot;
-
-  <a href="https://github.com/KiwiBunnyLuv/Sharbat">Report Bug</a>
-
-  &middot;
-
-  <a href="https://github.com/KiwiBunnyLuv/Sharbat">Request Feature</a>
-
+      A open-source code-based 2D game-engine
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/KiwiBunnyLuv/Sharbat">View Demo</a>
+    &middot;
+    <a href="https://github.com/KiwiBunnyLuv/Sharbat">Report Bug</a>
+    &middot;
+    <a href="https://github.com/KiwiBunnyLuv/Sharbat">Request Feature</a>
   </p>
 
 </div>
