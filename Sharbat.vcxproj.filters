@@ -15,14 +15,20 @@
     <Filter Include="Architecture">
       <UniqueIdentifier>{e358bae5-e301-4052-8d92-0078b317b90f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Architecture\header">
-      <UniqueIdentifier>{7c2ce296-d783-4d3c-bd09-b3b14f71b1e2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Architecture\source">
-      <UniqueIdentifier>{7a72aadc-f7bb-4e41-9e0a-25c08b4775e2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GUI">
       <UniqueIdentifier>{25ca7594-4d76-4623-9464-d83e7370609f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Architecture\entity">
+      <UniqueIdentifier>{bbe50abd-4453-43a2-9dc2-ad579fe556de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Architecture\component">
+      <UniqueIdentifier>{06654277-a8fb-4c61-aa4a-2fc2f7abad35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Architecture\system">
+      <UniqueIdentifier>{6e93d2cf-2739-458b-8d9b-ec5e15cc5058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Architecture\scene">
+      <UniqueIdentifier>{157d2b7c-293f-46a4-a9e2-2b7c0808ed62}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -31,21 +37,6 @@
     </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sharbat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="entity.h">
-      <Filter>Architecture\header</Filter>
-    </ClInclude>
-    <ClInclude Include="component.h">
-      <Filter>Architecture\header</Filter>
-    </ClInclude>
-    <ClInclude Include="scene.h">
-      <Filter>Architecture\header</Filter>
-    </ClInclude>
-    <ClInclude Include="sceneManager.h">
-      <Filter>Architecture\header</Filter>
     </ClInclude>
     <ClInclude Include="widget.hpp">
       <Filter>GUI</Filter>
@@ -56,12 +47,27 @@
     <ClInclude Include="label.hpp">
       <Filter>GUI</Filter>
     </ClInclude>
+    <ClInclude Include="component.hpp">
+      <Filter>Architecture\component</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.hpp">
+      <Filter>Architecture\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.hpp">
+      <Filter>Architecture\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>Architecture\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="inputHandler.hpp">
+      <Filter>Architecture\system</Filter>
+    </ClInclude>
+    <ClInclude Include="soundTrackManager.hpp">
+      <Filter>Architecture\system</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Sharbat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="button.cpp">
@@ -69,6 +75,12 @@
     </ClCompile>
     <ClCompile Include="label.cpp">
       <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="inputHandler.cpp">
+      <Filter>Architecture\system</Filter>
+    </ClCompile>
+    <ClCompile Include="soundTrackManager.cpp">
+      <Filter>Architecture\system</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

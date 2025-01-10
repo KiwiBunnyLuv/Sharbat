@@ -3,7 +3,7 @@
 #include <typeindex>
 #include <memory>
 
-#include "component.h"
+#include "component.hpp"
 
 namespace sharbat {
 	

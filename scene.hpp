@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <vector>
-#include "entity.h"
+#include "entity.hpp"
 
 namespace sharbat {
 
