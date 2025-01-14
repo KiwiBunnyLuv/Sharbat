@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -25,6 +25,29 @@
       <Configuration>Release</Configuration>
       <Platform>ARM64</Platform>
     </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\GUI\button.cpp" />
+    <ClCompile Include="src\GUI\label.cpp" />
+    <ClCompile Include="src\Scene\scene.cpp" />
+    <ClCompile Include="src\Scene\sceneManager.cpp" />
+    <ClCompile Include="src\System\inputHandler.cpp" />
+    <ClCompile Include="src\System\pch.cpp" />
+    <ClCompile Include="src\System\soundTrackManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Architecture\component.hpp" />
+    <ClInclude Include="include\Architecture\entity.hpp" />
+    <ClInclude Include="include\GUI\button.h" />
+    <ClInclude Include="include\GUI\label.h" />
+    <ClInclude Include="include\GUI\widget.hpp" />
+    <ClInclude Include="include\Scene\scene.h" />
+    <ClInclude Include="include\Scene\sceneManager.h" />
+    <ClInclude Include="include\sharbat.h" />
+    <ClInclude Include="include\System\framework.h" />
+    <ClInclude Include="include\System\inputHandler.h" />
+    <ClInclude Include="include\System\pch.h" />
+    <ClInclude Include="include\System\soundTrackManager.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -98,16 +121,16 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
-    <IncludePath>G:\My Drive\004_code\Sharbat\SFML\include;$(IncludePath)</IncludePath>
-    <LibraryPath>G:\My Drive\004_code\Sharbat\SFML\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\My Drive\004_code\Sharbat\external\SFML\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\My Drive\004_code\Sharbat\external\SFML\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>G:\My Drive\004_code\Sharbat\SFML\include;$(IncludePath)</IncludePath>
-    <LibraryPath>G:\My Drive\004_code\Sharbat\SFML\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\My Drive\004_code\Sharbat\external\SFML\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\My Drive\004_code\Sharbat\external\SFML\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>G:\My Drive\004_code\Sharbat\SFML\include;$(IncludePath)</IncludePath>
-    <LibraryPath>G:\My Drive\004_code\Sharbat\SFML\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\My Drive\004_code\Sharbat\external\SFML\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\My Drive\004_code\Sharbat\external\SFML\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -117,12 +140,19 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)external/SFML/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
       </SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)external/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -134,6 +164,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -142,6 +173,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -151,12 +185,19 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)external/SFML/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
       </SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)external/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -168,6 +209,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -176,6 +218,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
     <ClCompile>
@@ -185,12 +230,19 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)external/SFML/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
       </SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(ProjectDir)external/SFML/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
     <ClCompile>
@@ -202,6 +254,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -210,34 +263,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="button.hpp" />
-    <ClInclude Include="component.hpp" />
-    <ClInclude Include="entity.hpp" />
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="inputHandler.hpp" />
-    <ClInclude Include="label.hpp" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="scene.hpp" />
-    <ClInclude Include="sceneManager.h" />
-    <ClInclude Include="soundTrackManager.hpp" />
-    <ClInclude Include="widget.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="button.cpp" />
-    <ClCompile Include="inputHandler.cpp" />
-    <ClCompile Include="label.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="soundTrackManager.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

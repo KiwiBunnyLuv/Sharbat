@@ -1,5 +1,4 @@
-#ifndef SOUNDMANAGER_HPP
-#define SOUNDMANAGER_HPP
+#pragma once
 
 #include <SFML/Audio.hpp>
 #include <unordered_map>
@@ -7,29 +6,23 @@
 
 namespace sharbat {
 	class SoundManager {
-    private:
-        // SFX storage
-        std::unordered_map<std::string, sf::SoundBuffer> soundBuffers;
-        std::unordered_map<std::string, sf::Sound> sounds;
-
-        // Music storage
-        std::unordered_map<std::string, sf::Music> musicTracks;
-
-        // Currently playing music
-        sf::Music* currentMusic;
     public:
         SoundManager();
         ~SoundManager();
 
-        // Load sounds
         bool loadSound(const std::string& name, const std::string& filepath);
         bool loadMusic(const std::string& name, const std::string& filepath);
 
-        // Play sounds
         void playSound(const std::string& name);
         void playMusic(const std::string& name, bool loop = true);
 
-        // Stop music
         void stopMusic();
+    private:
+        std::unordered_map<std::string, sf::SoundBuffer> soundBuffers;
+        std::unordered_map<std::string, sf::Sound> sounds;
+
+        std::unordered_map<std::string, sf::Music> musicTracks;
+
+        sf::Music* currentMusic;
 	};
 }

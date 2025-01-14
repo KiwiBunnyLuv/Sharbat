@@ -1,7 +1,7 @@
 #ifndef LABEL_HPP
 #define LABEL_HPP
 
-#include "Widget.hpp"
+#include "GUI/Widget.hpp"
 
 namespace sharbat {
     class Label : public Widget {

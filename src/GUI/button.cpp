@@ -1,5 +1,5 @@
 // Button.cpp
-#include "Button.hpp"
+#include "GUI/Button.h"
 namespace sharbat {
 
     Button::Button(const sf::Vector2f& size, const sf::Font& font, const std::string& text) {

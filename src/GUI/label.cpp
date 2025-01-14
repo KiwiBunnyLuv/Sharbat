@@ -1,4 +1,4 @@
-#include "label.hpp"
+#include "GUI/label.h"
 
 namespace sharbat {
 

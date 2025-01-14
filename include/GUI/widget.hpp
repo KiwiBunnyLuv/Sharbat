@@ -1,6 +1,5 @@
 // Widget.hpp
-#ifndef WIDGET_HPP
-#define WIDGET_HPP
+#pragma once
 
 #include <SFML/Graphics.hpp>
 
@@ -22,4 +21,3 @@ namespace sharbat {
     };
 }
 
-#endif

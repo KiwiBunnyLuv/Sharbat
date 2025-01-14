@@ -1,86 +1,102 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="include">
+      <UniqueIdentifier>{3734549f-7407-4dbf-98d3-fe2513e203e6}</UniqueIdentifier>
     </Filter>
     <Filter Include="ressources">
-      <UniqueIdentifier>{338cadde-dd7c-4d8a-8840-c73901db87da}</UniqueIdentifier>
+      <UniqueIdentifier>{c2eafbdd-752a-4bb4-803f-063084ca874c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Architecture">
-      <UniqueIdentifier>{e358bae5-e301-4052-8d92-0078b317b90f}</UniqueIdentifier>
+    <Filter Include="src">
+      <UniqueIdentifier>{516ded4d-bec8-47d3-ba23-606466350448}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GUI">
-      <UniqueIdentifier>{25ca7594-4d76-4623-9464-d83e7370609f}</UniqueIdentifier>
+    <Filter Include="test">
+      <UniqueIdentifier>{dd2e18f9-5a3d-446b-bfd7-ec4478a56241}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Architecture\entity">
-      <UniqueIdentifier>{bbe50abd-4453-43a2-9dc2-ad579fe556de}</UniqueIdentifier>
+    <Filter Include="src\architecture">
+      <UniqueIdentifier>{7522a060-de61-496e-859a-ac2de27b2a62}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Architecture\component">
-      <UniqueIdentifier>{06654277-a8fb-4c61-aa4a-2fc2f7abad35}</UniqueIdentifier>
+    <Filter Include="src\GUI">
+      <UniqueIdentifier>{42f41093-3273-44f5-805a-87248d029438}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Architecture\system">
-      <UniqueIdentifier>{6e93d2cf-2739-458b-8d9b-ec5e15cc5058}</UniqueIdentifier>
+    <Filter Include="src\Scene">
+      <UniqueIdentifier>{73580af1-f54a-4b58-b334-10df1a8a5830}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Architecture\scene">
-      <UniqueIdentifier>{157d2b7c-293f-46a4-a9e2-2b7c0808ed62}</UniqueIdentifier>
+    <Filter Include="src\System">
+      <UniqueIdentifier>{df4ed7bc-750d-4ac7-9a79-d026bd46e410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\architecture">
+      <UniqueIdentifier>{448b6a6d-2239-4815-86f7-cb1e62193b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GUI">
+      <UniqueIdentifier>{18aced45-5bdd-4082-ac3e-f020567b0166}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\System">
+      <UniqueIdentifier>{80bdf79a-7edf-4593-82cf-0228e6e75cd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Scene">
+      <UniqueIdentifier>{3c84b959-c80d-4e4e-b41f-c61f61e99cba}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="widget.hpp">
-      <Filter>GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="button.hpp">
-      <Filter>GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="label.hpp">
-      <Filter>GUI</Filter>
-    </ClInclude>
-    <ClInclude Include="component.hpp">
-      <Filter>Architecture\component</Filter>
-    </ClInclude>
-    <ClInclude Include="entity.hpp">
-      <Filter>Architecture\entity</Filter>
-    </ClInclude>
-    <ClInclude Include="scene.hpp">
-      <Filter>Architecture\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="sceneManager.h">
-      <Filter>Architecture\scene</Filter>
-    </ClInclude>
-    <ClInclude Include="inputHandler.hpp">
-      <Filter>Architecture\system</Filter>
-    </ClInclude>
-    <ClInclude Include="soundTrackManager.hpp">
-      <Filter>Architecture\system</Filter>
-    </ClInclude>
+    <ClCompile Include="src\System\soundTrackManager.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\inputHandler.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\System\pch.cpp">
+      <Filter>src\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\scene.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\sceneManager.cpp">
+      <Filter>src\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\button.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\label.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="button.cpp">
-      <Filter>GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="label.cpp">
-      <Filter>GUI</Filter>
-    </ClCompile>
-    <ClCompile Include="inputHandler.cpp">
-      <Filter>Architecture\system</Filter>
-    </ClCompile>
-    <ClCompile Include="soundTrackManager.cpp">
-      <Filter>Architecture\system</Filter>
-    </ClCompile>
+    <ClInclude Include="include\Architecture\component.hpp">
+      <Filter>include\architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Architecture\entity.hpp">
+      <Filter>include\architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\button.h">
+      <Filter>include\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\label.h">
+      <Filter>include\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GUI\widget.hpp">
+      <Filter>include\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\scene.h">
+      <Filter>include\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\sceneManager.h">
+      <Filter>include\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="include\System\framework.h">
+      <Filter>include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\System\inputHandler.h">
+      <Filter>include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\System\pch.h">
+      <Filter>include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\System\soundTrackManager.h">
+      <Filter>include\System</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sharbat.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

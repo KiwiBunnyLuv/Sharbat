@@ -1,10 +1,6 @@
-// Button.hpp
-#ifndef BUTTON_HPP
-#define BUTTON_HPP
-
-#include "widget.hpp"
+#pragma once
+#include "GUI/widget.hpp"
 #include <functional>
-
 #include "SFML/Graphics.hpp"
 
 namespace sharbat {
@@ -16,7 +12,6 @@ public:
     void handleEvent(const sf::Event& event) override;
     void update(float deltaTime) override;
     void render(sf::RenderWindow& window) override;
-
     void setCallback(std::function<void()> callback);
 
 private:
@@ -29,4 +24,3 @@ private:
 
 }
 
-#endif
